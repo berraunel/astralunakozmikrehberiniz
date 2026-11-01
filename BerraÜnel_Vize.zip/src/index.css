@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-playfair: 'Playfair Display', Georgia, serif;
+    --font-cinzel: 'Cinzel', serif;
+    --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0e18;
+    color: #e2e8f0;
+    overflow-x: hidden;
+    /* Soft dark mode with delicate cosmic stardust grid matching reference */
+    background-image: 
+      radial-gradient(rgba(192, 132, 252, 0.12) 1px, transparent 1px),
+      radial-gradient(at 50% 15%, rgba(192, 132, 252, 0.09) 0px, transparent 55%),
+      radial-gradient(at 15% 45%, rgba(244, 114, 182, 0.05) 0px, transparent 50%),
+      radial-gradient(at 85% 65%, rgba(56, 189, 248, 0.05) 0px, transparent 50%),
+      linear-gradient(180deg, #090c16 0%, #0e1222 40%, #0a0d18 100%);
+    background-size: 36px 36px, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+    background-attachment: fixed;
+  }
+}
+
+.font-playfair {
+  font-family: var(--font-playfair);
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-cormorant {
+  font-family: var(--font-cormorant);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090c16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2740;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #354168;
+}

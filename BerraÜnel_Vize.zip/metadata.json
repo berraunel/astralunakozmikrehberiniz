@@ -1,0 +1,6 @@
+{
+  "name": "AstraLuna - Gök Günlüğünüz & Kozmik Rehberiniz",
+  "description": "AstraLuna: Kişisel doğum haritası, kozmik uyum matrisi, stil rehberi ve geçmiş yaşam karma kütüphanesi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
